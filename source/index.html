@@ -12,43 +12,41 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo-link logo" href="index.html">
-      <span class="visually-hidden">Логотип обновления страницы.</span>
-      <img class="logo__image" src="#" width="70" height="59" aria-hidden="true" alt="logo image">
-      <img class="logo__text" src="#" width="118" height="21" alt="Логотип магазина Кет-Энерджи">
+      <img class="logo__image" src="#" width="174" height="50" alt="Логотип магазина Кет-Энерджи">
     </a>
     <nav class="main-nav main-nav--index">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link link main-nav__link--current" href="#">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link link" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link link" href="#">Подбор программы</a>
+        </li>
+      </ul>
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link link main-nav__link--current" href="#">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link link" href="#">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
     </nav>
-    <section class="promo">
-      <div class="promo__wrapper">
-        <h1 class="promo__title">
-          Функциональное питание для котов
-        </h1>
-        <p class="promo__title-slogan">
-          Занялся собой? Займись котом!
-        </p>
-        <a class="promo__button-link button-link" href="#">Подобрать программу</a>
-        <img class="promo__image" src="#" width="552" height="499" alt="Баночка кошачьего питания. Вкус курица">
-      </div>
-    </section>
   </header>
 
   <main class="main-container">
+    <section class="hero">
+      <div class="hero__wrapper">
+        <h1 class="hero__title">
+          Функциональное питание для котов
+        </h1>
+        <p class="hero__title-slogan">
+          Занялся собой? Займись котом!
+        </p>
+        <a class="hero__button-link button-link" href="#">
+          Подобрать программу
+        </a>
+        <img class="hero__image" src="#" width="552" height="499" alt="Баночка кошачьего питания. Вкус курица">
+      </div>
+    </section>
     <section class="program-effect">
       <div class="program-effect__wrapper">
         <h2 class="visually-hidden">Преимущества питания</h2>
@@ -77,6 +75,7 @@
         <h2 class="about-works__title">Как это работает</h2>
         <ol class="about-works__list">
           <li class="about-works__item about-works__item--eco">
+            <!-- Цифры лучше добавлять через свойство каунт -->
             <p class="about-works__description">Функциональное питание содержит только полезные питательные вещества.</p>
           </li>
           <li class="about-works__item about-works__item--easy">
@@ -127,17 +126,16 @@
     </section>
 
     <section class="contacts address-map">
-      <div class="contacts__wrapper">
-        <h2 class="visually-hidden">Наши контакты</h2>
-        <div class="contacts__address-wrapper">
-          <p class="contacts-description">
-            Приглашаем к сотрудничеству дилеров!
-          </p>
-          <address class="contacts__address">
-            <p class="contacts__street">ул. Большая Конюшенная, д. 19/8</p>
-            <p class="contacts__city">Санкт-Петербург</p>
-          </address>
-        </div>
+      <h2 class="visually-hidden">Наши контакты</h2>
+      <img class="address-map__image" src="#" width="1440" height="400" alt="Карта где расположен магазин">
+      <div class="contacts__address-wrapper">
+        <p class="contacts__description">
+          Приглашаем к сотрудничеству дилеров!
+        </p>
+        <address class="contacts__address">
+          <p class="contacts__street">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="contacts__city">Санкт-Петербург</p>
+        </address>
       </div>
     </section>
   </main>
@@ -149,25 +147,30 @@
           <img class="logo__text" src="#" width="128" height="24" alt="Логотип Кет-Энерджи">
         </a>
       </div>
-      <div class="footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
-          </li>
-        </ul>
-      </div>
-      <div class="developer">
-        <a class="developer__link" href="htmlacademy.ru">
-          <span class="developer__text">HTML Academy</span>
-          <img class="developer__logo" src="#" width="27" height="34" alt="Логотип Htmlacademy">
-        </a>
-      </div>
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Мы в Вконтакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Мы в Ютубе</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Мы в Телеграме</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="developer">
+      <a class="developer__link" href="htmlacademy.ru">
+        <span class="developer__text">HTML Academy</span>
+        <img class="developer__logo" src="#" width="27" height="34" alt="Логотип Htmlacademy">
+      </a>
+    </div>
     </div>
   </footer>
 </body>
