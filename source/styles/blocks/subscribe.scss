@@ -1,8 +1,10 @@
+
 .subscribe__description {
   font-family: $secondary-font;
   color: var(--darken-color, #000000);
   font-size: 16px;
   line-height: 1.5;
+
   padding: 32px 0 24px;
   margin: 0 auto;
   text-align: center;
@@ -31,12 +33,14 @@
     gap: 0;
     justify-content: center;
   }
-}
+
+
 
 .subscribe__input-email {
   font-family: $secondary-font;
   color: var(--special-dark-light, #444444);
   font-size: 20px;
+
   padding: 13px;
   text-transform: uppercase;
   width: 100%;
@@ -81,4 +85,8 @@
     background-color: var(--button-lighten-color-hex, #5eaa2f);
     color: var(--basic-light-color-rgba, rgba(255, 255, 255, 0.3));
   }
+
+  text-transform: uppercase;
 }
+
+

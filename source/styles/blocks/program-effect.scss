@@ -1,3 +1,4 @@
+
 .program-effect {
   padding: 20px 0;
 
@@ -129,11 +130,13 @@
 }
 
 .program-effect__title {
+
   color: var(--darken-color, #000000);
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 1.54;
   text-transform: uppercase;
+
   margin: 0;
 
   @media (min-width: $tablet-width) {
@@ -189,18 +192,22 @@
 }
 
 .program-effect__link {
+
   color: var(--darken-color, #000000);
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 1;
   text-transform: uppercase;
+
   display: flex;
   align-items: center;
+
 
   &::after {
     content: "";
     display: block;
     width: 32px;
+
     height: 12px;
     background-image: url("../../icons/stack.svg#icon-arrow");
     background-position: -8px;
@@ -229,3 +236,4 @@
     grid-area: 3/1/4/-1;
   }
 }
+

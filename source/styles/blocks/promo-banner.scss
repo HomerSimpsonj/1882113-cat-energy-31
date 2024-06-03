@@ -1,4 +1,5 @@
 .promo-banner {
+
   background-color: rgba(104, 183, 56);
   min-height: 290px;
   background-image:
@@ -12,12 +13,14 @@
   background-repeat: no-repeat;
   background-position: center;
 
+
   &::before {
     content: "";
     display: block;
     width: 78px;
     height: 80px;
     background-image: url("../../icons/stack.svg#icon-gift");
+
     margin: 59px auto 48px;
   }
 
@@ -73,12 +76,14 @@
       margin: 0 0 46px;
     }
   }
-}
+
+
 
 .promo-banner__description {
   color: var(--basic-light-color, #ffffff);
   font-size: 16px;
   line-height: 1.25;
+
   text-align: center;
   width: 161px;
   margin: 0 auto;

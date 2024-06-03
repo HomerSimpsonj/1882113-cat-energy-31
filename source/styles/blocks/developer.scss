@@ -1,4 +1,5 @@
 .developer {
+
   @media (max-width: $mobile-width-only) {
     padding: 19px 0 0;
   }
@@ -16,9 +17,24 @@
     height: 34px;
     mask-image: url("../../icons/stack.svg#icon-htmlacademy");
     mask-size: 27px 34px;
+
+
+}
+
+
+.developer__icon {
+  &::before {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 24px;
+    mask-image: url("../../icons/stack.svg#icon-htmlacademy");
+    mask-size: 27px 24px;
+
     mask-repeat: no-repeat;
     background-color: var(--special-dark-light-accent-2, #666666);
   }
+
 
   @media (min-width: $tablet-width) {
     column-gap: 23px;
@@ -29,12 +45,20 @@
   }
 
   &:focus::after {
+
+  &:hover::before {
+    background-color: var(--basic-brand-color, #68b738);
+  }
+
+  &:focus::before {
+
     background-color: var(--basic-brand-color, #68b738);
   }
 
   &:active {
     opacity: 0.3;
   }
+
 }
 
 .developer__text {
@@ -42,3 +66,4 @@
   font-size: 16px;
   line-height: 1.25;
 }
+

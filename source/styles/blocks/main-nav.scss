@@ -4,6 +4,7 @@
   font-size: 20px;
   line-height: 1;
   text-transform: uppercase;
+
   display: flex;
   align-items: center;
 
@@ -127,10 +128,11 @@
       }
     }
   }
-}
 
+}
 .main-nav__link {
   color: var(--darken-color, #000000);
+
   position: relative;
 
   @media (max-width: $mobile-width-only) {
@@ -205,6 +207,8 @@
   z-index: 2;
   background-color: var(--basic-light-color, #ffffff);
 
+
+
   &:hover {
     opacity: 0.6;
   }
@@ -213,7 +217,10 @@
     opacity: 0.3;
   }
 
+
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
+
+

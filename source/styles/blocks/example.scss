@@ -1,5 +1,6 @@
 .example {
   background-color: var(--secondary-basic-light-accent-2, #eaeaea);
+
   min-width: 280px;
 
   @media (max-width: $mobile-width-only) {
@@ -31,6 +32,7 @@
     grid-template-columns: 1fr 560px;
     column-gap: 228px;
   }
+
 }
 
 .example__title {
@@ -38,6 +40,7 @@
   color: var(--darken-color, #000000);
   font-size: 36px;
   line-height: 1.11;
+
   margin: 0;
   margin-bottom: 42px;
 
@@ -66,4 +69,7 @@
   @media (min-width: $desktop-width) {
     margin: 0 0 69px;
   }
+
+}
+
 }
