@@ -24,6 +24,16 @@
 
 .main-nav__link {
   color: var(--darken-color, #000000);
+
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
 }
 
 .main-nav__link--current {
@@ -31,6 +41,12 @@
 }
 
 .main-nav__toggle {
+
+  background-image: url("../../icons/stack.svg#button-burger");
+  background-color: var(--basic-light-color, #ffffff);
+  width: 24px;
+  height: 24px;
+  border: none;
 
 }
 
