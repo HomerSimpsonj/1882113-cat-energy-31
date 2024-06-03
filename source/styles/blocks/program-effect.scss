@@ -29,6 +29,7 @@
   line-height: 1;
   text-transform: uppercase;
 
+
   &::after {
     content: "";
     display: block;
@@ -52,4 +53,6 @@
   width: 67px;
   height: 50px;
   background-image: url("../../icons/stack.svg#cat-program2");
+
 }
+

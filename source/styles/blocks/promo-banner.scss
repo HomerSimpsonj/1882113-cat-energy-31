@@ -1,6 +1,7 @@
 .promo-banner {
   background-color: var(--basic-brand-color, #68b738);
 
+
   &::before {
     content: "";
     display: block;
@@ -8,6 +9,7 @@
     height: 80px;
     background-image: url("../../icons/stack.svg#icon-gift");
   }
+
 }
 
 .promo-banner__description {
