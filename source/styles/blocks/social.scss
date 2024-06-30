@@ -1,11 +1,20 @@
 .social {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
 
+  @media (max-width: $mobile-width-only) {
+    padding: 20px 0;
+    border-top: 1px solid var(--special-dark-light-accent-4, #d9d9d9);
+    border-bottom: 1px solid var(--special-dark-light-accent-4, #d9d9d9);
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
+  }
 }
-
-.social__item {
-
-}
-
 
 .social__link--vkontakte {
   &::before {
@@ -85,4 +94,3 @@
     opacity: 0.3;
   }
 }
-
